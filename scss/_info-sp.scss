@@ -1,0 +1,324 @@
+// $margin-bottom: 20px; info.scss参照
+ 
+// 会社案内のサブメニュー
+
+.nav9 {
+    display: none;
+}
+
+.nav10, .nav11, .nav12{
+    display: none !important;
+}
+// 業務内容のサブメニュー
+.nav13, .nav14 {
+    display: none !important;
+}
+
+.nav-sp__wrap2, .nav-sp__wrap3 {
+    @extend .nav-sp__wrap;
+    padding: 0 !important;
+}
+
+// .nav-toggler {
+//     display: none;
+// }
+
+.nav-sp{
+    background: rgba(89,89,89,0.9);
+    height: $height;
+    width: 100%;
+    &__wrap {
+        position: absolute;
+        right: 0;
+        padding: 15px;
+        cursor: pointer;
+    }
+    &__accordion {
+        @extend .nav-sp;
+        padding-top: $height;
+        color: #e6e6e6;
+        &__menu, &__menu2, &__menu3 {
+            @extend .nav-sp;
+            line-height: $height;
+            padding-left: 30px;
+            font-weight: bold;
+            &:hover {
+                background-color:rgb(100, 96, 96);
+                transition: background-color 0.5s;
+                cursor: pointer;
+            }
+        } 
+    }
+}
+
+.nav-sp__submenu {
+    //liの中のulのwidthがなぜか30px減少してしまい、検証ツールでも解決できなかったので減少分足した
+    width: calc(100% + 30px);
+    margin-left: -30px;
+    &__item1, &__item2, &__item3, &__item4, &__item5 {
+        background: rgba(68, 67, 67, 0.9);  
+        height: $height;
+        line-height: $height;
+        padding-left: $height;
+        
+        &:hover {
+            background-color:rgb(100, 96, 96);
+            transition: background-color 0.5s;
+            cursor: pointer;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+}
+
+.circle {
+    position: relative;
+    width: 35px;
+    height: 35px;
+}
+.circle2 {
+    position: relative;
+    background-color: rgb(134, 130, 130);
+    width: 50px;
+    height: 50px;
+}
+.circle3 {
+    @extend .circle2;
+}
+
+.bar {
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: white;
+    border-radius: 2px;
+    transition: ease 0.3s;
+}
+
+.tate1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    height: 20px;
+    width: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+
+.tate2 {
+    @extend .tate1;
+}
+
+.yoko1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    height: 4px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.yoko2 {
+    @extend .yoko1;
+}
+
+.top {
+    top: 18%;
+}
+.middle {
+    top: 48%;
+}
+.bottom {
+    top: 78%;
+}
+
+.close .top {
+    transform: rotate(45deg);
+    top: 48%;
+}
+.close .middle {
+    opacity: 0;
+}
+.close .bottom {
+    transform: rotate(-45deg);
+    top: 48%;
+}
+
+.sp-info {
+    margin: 50px auto 0 auto;
+    // box-shadow: 5px 5px rgb(128, 126, 126);
+}
+
+.sp-title {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 100%;
+        background: $color;
+    }
+}
+
+.sp-info__wrap__title {
+    @extend .info__title;
+    font-size: 21px;
+    margin: 0 0 50px 20px;
+}
+
+.sp-pic {
+    max-width: 490px;
+    margin: 0 auto;
+    margin-bottom: $margin-bottom2;
+}
+
+.sp-company-profile {
+    @extend .company-profile;
+    width: 100%;
+    margin-bottom: $margin-bottom2;
+}
+
+.sp-company-title {
+    @extend .company-title;
+}
+
+.sp-company-subtitle {
+    @extend .company-subtitle;
+    margin-bottom: $margin-bottom3;
+}
+
+.sp-table {
+    width: 100%;
+}
+
+.sp-table-heading {
+    height: 53px;
+    background-color: #e6e6e6;
+
+}
+
+.sp-titles {
+    padding: $padding;
+    border-top: 1px solid rgb(150, 146, 146);
+}
+
+.sp-details {
+    padding: $padding;
+    line-height: 180%;
+}
+
+.sp-rowAdjast td {
+    display: block;
+}
+
+.sp-company-profiles {
+    @extend .sp-company-profile;
+    margin-top: $margin-top;
+}
+
+.sp-info__table__officer {
+    width: 100%;
+    margin: $margin;
+    padding: 0 0 0 0; 
+    border-top: $border;
+
+    tr th {
+        display: block;
+        padding: 10px 0 0 10px;
+    } 
+    tr {
+        border-bottom: $border;   
+        td {
+            display: block;
+            padding: 0 0 10px 10px;
+            line-height: 160%;
+        }
+    } 
+}
+
+.sp-info__footer {
+        padding: 50px 0 65px 10px;
+        // background-color: rgb(233, 227, 227);
+    img {
+        max-width: 240px;
+    }
+}
+
+.sp-footer__post {
+    font-size: 12px;
+    line-height: 160%;
+}
+
+.sp-footer-link {
+    cursor: pointer;
+    a {
+        text-decoration: none;
+        display: block;
+    }
+    &__wrap {
+        @extend .sp-info__wrap__title;
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        color: black;
+        img {
+            width: 15px;
+        }
+    }
+}
+
+.sp-space {
+    letter-spacing: 1rem;
+}
+
+.sp-footer-nav {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    &__left {
+        height: 60px;
+        width: 50%;
+        background-color: #3071b9;
+        &:hover {
+            background-color:rgb(100, 96, 96);
+            transition: background-color 0.5s;
+            cursor: pointer;
+        }
+    }
+    &__right {
+        height: 60px;
+        width: 50%;
+        background-color: #003e8e;
+        &:hover {
+            background-color:rgb(100, 96, 96);
+            transition: background-color 0.5s;
+            cursor: pointer;
+        }
+    }
+}
+
+.sp-footer__copyright {
+    height: 60px;
+
+    a {
+        display: inline-block;
+        width: 100%;
+        line-height: 60px;
+        text-align: center;
+        font-size: 10px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}

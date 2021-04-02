@@ -1,0 +1,54 @@
+$nav-height: 60px;
+
+.top-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: $nav-height;
+    width: 68%;
+    padding: 0px;
+    display: block;
+}
+
+.nav-menu {
+    height: $nav-height;
+    display: flex;
+    color: #ffffff;
+    font-family: monospace;
+    font-weight: bold;
+    &__recruit {
+        background-color: #3071b9;
+    }
+    &__info {
+        background-color: #003e8e;
+    }
+    li {
+        height: $nav-height;
+        width: 16.66%;
+        text-align: center;
+        &:hover {
+            background-color:rgb(100, 96, 96);
+            transition: background-color 0.5s;
+            cursor: pointer;
+        }
+        a {
+            line-height: $nav-height;
+            text-decoration: none;
+            pointer-events: none;
+        }
+    }
+}
+
+.header-wrapper {
+    position: relative;
+}
+
+.header-logo {
+    position: absolute;
+    top: 3%;
+    left: 10%;
+    img {
+        width: 260px;
+        height: 104px;
+    }
+}

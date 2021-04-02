@@ -1,0 +1,230 @@
+$font-family: monospace;
+$color: #003e8e;
+$background-color: #b5b5b6;
+$background-color2:rgb(187, 182, 182);
+$border: 1px #999 solid;
+$margin: 50px 0 100px 0;
+$margin-top: 100px;
+$margin-left: 2%;
+$margin-bottom: 20px;
+$margin-bottom2: 40px;
+$margin-bottom3: 60px;
+$padding: 15px 0 15px 12px;
+$height: 60px; 
+
+//topレベルの背景はhtmlに記載 classは"container-fluid" 40行目付近
+
+.info {
+    position: absolute;
+    top: 250px;
+    left: 10%;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 40px 0 0 0;
+    &__wrap2 {
+        width: 50%;
+        padding: 0;
+        float: right;
+    }
+
+    .paper-heading {
+        background-image: url("http://www.fnk.jp/wpf/wp-content/themes/fujitanew/images/company-arrow.svg");
+        background-size: cover;
+        position: absolute;
+        top: 25%;
+        left: -11%;
+        width: 130px;
+        height: 1100px;
+        float: left;
+    }
+
+    .info__pic {
+        width: 490px;
+        height: 255px;
+    }
+
+    &__wrap {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 100px;
+            left: 0;
+            display: inline-block;
+            width: 7px;
+            height: 240px;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            background-color: $color;
+            border-radius: 2px;
+        }
+        &__title {
+            margin: 100px 80px 0 80px;
+        }
+    }
+}
+
+.info__title {
+    padding: 0 0 5px 20px;
+    font-size: 40px;
+    color: $color;
+    display: inline-block;
+    background-image: url("http://www.fnk.jp/wpf/wp-content/themes/fujitanew/images/arrow-blue.svg");
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+.info__subtitle {
+    color: $color;
+}
+
+.info_article {
+    // background-color: rgb(149, 237, 243);
+    margin: 80px 0 100px 180px;
+    padding: 0 0 0 15px;
+    width: 940px;
+    word-break: break-all;
+}    
+
+.company-profile {
+    font-size: 14px;
+    color: #fff;
+    width: 164px;
+    height: 36px;
+    background-color: $background-color2;
+    text-align: center;
+    margin-bottom: 22.5px;
+}
+
+.company-title {
+    font-size: 28px;
+    letter-spacing: 4px;
+    margin-bottom: $margin-bottom;
+}
+.company-subtitle {
+    line-height: 180%;
+    margin-bottom: $margin-bottom;
+}
+
+.info__table {
+    width: 100%;
+    margin: $margin;
+    padding: 0 0 0 0;
+    border-top: $border;
+    tbody tr {
+        white-space: normal;
+        vertical-align: top;
+        width: 25%;
+        border-bottom: $border;
+        border-collapse: separate;
+        th {
+            padding: $padding;
+            width: 25%;
+            background-color: #e6e6e6;
+        }
+        td {
+            padding: $padding;
+            width: 75%;
+        }
+    }
+}
+
+.info__place {
+    line-height: 180%;
+    margin-bottom: 10px;
+    &:first-child {
+        padding-top: 5px;
+    }
+}
+
+.info-left {
+    width: 25%;
+}
+.info-right {
+    width: 75%;
+}
+
+.info__blank {
+    margin-left: 1em;
+    height: 0;
+}
+
+.info__table__officer {
+    @extend .info__table;
+    tbody tr th {
+        background-color: #ffffff;
+    }   
+}
+
+.info__table__suppliers {
+    @extend .info__table;
+    tbody tr {
+        width: 100%;
+        border: 0;
+        height: 28px;
+        font-family: $font-family;
+        &:last-child {
+            border-bottom: $border;
+        }
+    }
+}
+
+.info__table__trade {
+    margin: $margin;
+    border-top: $border;
+    width: 100%;
+    height: 0;
+}
+.trade__inner { 
+    // margin-bottom: 10px;
+    height: 0;
+    &__suppliers {
+        display: block;
+        padding-left: 20px;
+
+        &:first-child {
+            padding-top: 16px;
+        }
+        &:last-child {
+            border-bottom: $border;
+        }
+    }
+}
+
+.info__footer {
+    background-color: #eeefef;
+    clear: both;
+    width: 100%;
+    margin: 0px auto 0px;
+    padding: 60px 10% 60px 10%;
+    z-index: 100;
+} 
+
+.footer__links {
+    display: flex;
+    width: 100%;
+}
+
+.footer__title img{
+    display: block;
+    width: 235px;
+}
+
+.footer__home {
+    margin-left: $margin-left;
+    display: block;
+    width: 16.5%;
+}
+.footer__info {
+    @extend .footer__home;
+}
+
+.footer__content {
+    @extend .footer__home;
+}
+.footer__perform {
+    @extend .footer__home;
+}
+
+.footer__nav-menu {
+    @extend .nav-menu;
+}

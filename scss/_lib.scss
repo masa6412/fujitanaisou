@@ -1,0 +1,48 @@
+body {
+    font-family: 'Roboto','Sawarabi Gothic','Noto Sans JP',sans-serif;
+    font-size: 15px;
+    background: #fff;
+    color: #333;
+    line-height: 250%;
+}
+
+//pc
+@media (min-width: 960px) {
+    
+}
+
+@media (min-width: 767px) {
+    .nav-sp {
+        display: none;
+    }
+}
+
+// under pc 
+@media (max-width: 959px) {
+    .header-logo img {
+        width: 160px !important;
+    }
+}
+
+//tab size only
+@media (min-width: 768px) and (max-width: 959px) {
+    .nav-menu li a {
+        font-size: 14px;
+    }
+}
+
+//sp size only
+@media (max-width: 768px) {
+    header {
+        padding-top: 60px;
+    }
+    .top-nav {
+        display: none !important;
+    }
+    .info-pc {
+        display: none !important;  
+    }
+    .info__footer {
+        display: none;
+    }
+}
