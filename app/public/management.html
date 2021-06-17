@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>HP管理ページ</title>
+</head>
+<body style="background-color:rgb(200, 221, 244);">
+    <div class="container manage-pc">
+        <h1 class="text-center my-4">お問い合わせ一覧</h1>
+        <div class="controller"> 
+            <label for="search" class="mb-3 ml-4">ユーザーidで検索</label>
+            <input class="ml-2" type="number" id="search" placeholder="半角数字" style="background-color: #fff;">
+            <button class="btn btn-sm btn-info" id="search-btn">検索</button>
+        </div>
+    
+        <table class="table" style="table-layout:fixed; width: 100%;">
+            <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">名前</th>
+                    <th scope="col">かな</th>
+                    <th scope="col">メールアドレス</th>
+                    <th scope="col">会社名</th>
+                    <th scope="col">部署名</th>
+                    <th scope="col">電話番号</th>
+                    <th scope="col">住所</th>
+                    <th scope="col">建物/ビル名</th>
+                    <th scope="col">受信日</th>
+                    <th scope="col">お問い合わせ内容</th>
+                    <th scope="col">管理</th>
+                </tr>
+            </thead>
+            <tbody id="users-list">
+    
+            </tbody>
+        </table>
+    </div>
+    <!-- under tab -->
+        <div class="container manage-sp mt-5">
+
+            <div class="controller"> 
+                <label for="search" class="mb-3 ml-4">ユーザーidで検索</label>
+                <input class="ml-2" type="number" id="sp-search" placeholder="半角数字" style="background-color: #fff;">
+            </div>
+                <button class="btn btn-sm btn-info" id="sp-search-btn" style="display: block;">検索</button>
+            <div class="block">
+                <table class="table" style="table-layout:fixed; width: 100%;">
+                    <thead>
+                        <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">名前</th>
+                            <th scope="col">メールアドレス</th>
+                            <th scope="col">管理</th>
+                        </tr>
+                    </thead>
+                    <tbody id="sp-users-list">
+        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    <script src="js/users.js" defer></script>
+    <script src="js/index.js" defer></script>
+</body>
+</html>

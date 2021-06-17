@@ -1,0 +1,58 @@
+.contact-top {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.contact1 {
+    width: 100%;
+    border: 1px solid rgb(202, 199, 199);
+    box-shadow: 1px 1px inset rgb(202, 199, 199);
+}
+
+.must {
+    color: #f00;
+    font-size: 10px;       
+}
+
+.confirm {
+    text-align: center;
+}
+.confirm-btn {
+    width: 160px;
+    height: 43px;
+    line-height: 43px;
+    background-color: #367ddb;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.contact-title {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #ffffff;
+    background-color: rgb(131, 127, 126);
+}
+
+.rec-wrap7 {
+    p {
+        padding-top: 30px;
+        line-height: 200%;
+    }
+}
+
+.contact__table {
+    width: 100%;
+    tbody tr th {
+        background-color: #e7e5e5;
+        border-top: 1px solid #bbb7b7;
+        padding-left: 10px;
+    }
+    tbody tr td {
+        padding: 10px 0;
+    }
+}

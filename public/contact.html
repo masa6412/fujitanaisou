@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://kit.fontawesome.com/434bcc9383.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>お問い合わせ</title>
+</head>
+<body>
+     <!-- トップへ戻るボタン -->
+     <p id="topbutton" onclick="$('html,body').animate({ scrollTop: 0 }); return false;">
+        <a href="#top" id="toTop">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+     </p>
+
+    <header>
+        <div class="container-fluid header-wrapper">
+            <div class="row">
+                <img src="../img/top-bg.jpg" style="width: 100%;" alt="#">
+            </div>
+            <div class="header-logo">
+                <img src="../img/mainLogo.png" alt="#">
+            </div>
+        </div>
+
+       
+
+        <div class="header-items d-flex">
+            <!-- tabサイズ以上 -->
+            <div class="top-nav" style="background-color: rgb(163, 159, 159);">
+                <nav>
+                    <ul class="nav-menu">
+                      <li id="top"><a href="#">TOP</a></li>
+                      <li id="info-icon">
+                          <a href="#">会社案内</a>
+                          <!-- #info-toggleにカーソルが乗っている時も表示させたいができない -->
+                          <!-- <ul id="info-toggle">
+                              <li>沿革</li>
+                              <li>資格</li>
+                              <li>営業場・工場・アクセス</li>
+                          </ul> -->
+                      </li>
+                      
+                      <li id="content"><a href="#">業務内容</a></li>
+                      <li id="construction"><a href="#">施工事例</a></li>
+                      <li id="recruit" class="nav-menu__recruit"><a href="#">採用情報</a></li>
+                      <li id="contact" class="nav-menu__info"><a href="#">お問い合わせ</a></li>
+                    </ul>
+                  </nav>
+            </div>
+
+        </div>
+    </header>
+
+        <div class="container-fluid info-pc" style="height: 1800px;">
+            
+            <div class="paper-heading"><img style="padding-top: 200px;" src="http://www.fnk.jp/wpf/wp-content/themes/fujitanew/images/company-arrow.svg" alt="#"></div>                
+            
+            <div class="info" style="box-shadow: 0px 2px 3px rgb(80, 79, 79)">
+                
+                <div class="info__wrap">
+                    <div class="info__wrap__title d-block font-weight-bold">
+                        <h2 class="info__title">CONTACT</h2>
+                        <p class="info__subtitle">お問い合わせ</p>
+                    </div>
+                </div>
+                <div class="info_article">
+                    <div class="contact-top">
+                        <p>株式会社藤田内装建築へのお問い合わせは、以下のフォームにご入力頂きまして「送信」ボタンを押して下さい。<br>
+                            株式会社藤田内装建築では、お客様からご提供いただく個人情報を、プライバシーポリシーに準じ、細心の注意を払って取り扱います。</p>
+                    </div>
+                    
+                    <form method="POST" action="http://localhost:3000/api/v1/users" id="notMoveForm" target="notMove" onsubmit="return check()">
+                    
+                        <table class="info__table" style="margin-bottom: 50px;">
+                            <tbody>
+                                <tr>
+                                    <th>お名前<span class="must">※必須</span></th>
+                                    <td>
+                                        <input type="text" class="contact1" id="name" name="name" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>ふりがな<span class="must">※必須</span></th>
+                                    <td>
+
+                                        <input type="text" class="contact1" id="kana" name="kana" required>
+                                    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>メールアドレス<span class="must">※必須</span></th>
+                                    <td>
+                                        
+                                        <input type="text" class="contact1" id="address" name="address" required>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>会社名</th>
+                                    <td>
+                                        
+                                        <input type="text" class="contact1" id="company" name="company">
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>部署名</th>
+                                    <td>
+                                        
+                                        <input type="text" class="contact1" id="department" name="department">
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>電話番号<span class="must">※必須</span></th>
+                                    <td>
+                                        
+                                            <input type="text" class="contact1" id="phoneNumber" name="phoneNumber" required>
+                                        
+                                    </td>
+                                </tr>
+                              
+                                <tr>
+                                    <th>ご住所</th>
+                                    <td>
+                                        
+                                            <input type="text" class="contact1" id="post" name="post">
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>マンション・ビル名</th>
+                                    <td>
+                                        
+                                        <input type="text" class="contact1" id="post2" name="post2">
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>お問い合わせ内容<span class="must">※必須</span></th>
+                                    <td>
+                                        
+                                        <textarea type="text" class="contact1" id="contents" name="contents" rows="10" cols="40" required></textarea>
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        
+                        <div class="confirm">
+                            <div class="confirm2">
+                                <label for="yes">上記内容にて送信しますので、チェックマークを入れてください。<span class="must">※必須</span>
+                                    <input type="checkbox" name="my-input" id="yes" required>
+                                </label>
+                            </div>
+                            <div class="confirm2">
+                                <input type="submit" class="confirm-btn" id="confirm-btn" value="送信">
+                            </div>
+                        </div>
+                    </form>
+
+
+                    <iframe name="notMove" style="width: 0px; height: 0px; border: 0px;"></iframe>
+
+                    
+                    <div class="jumbotron rec-jumbotron p-0" style="margin: 100px auto 100px auto;">
+                        <div class="rec-wrap">
+                            <p class="contact-title">個人情報保護方針</p>
+                            <div class="rec-wrap2">
+                                <div class="rec-wrap3">
+                                    <p class="rec-name">株式会社 藤田内装建築 ［ 本社／総務部 ］</p>
+                                    <p class="rec-post">〒949-8724 新潟県小千谷岩沢2352-3</p>
+                                </div>
+                           </div>
+                        </div>
+                      <div class="rec-wrap7">
+                          <p>個人情報保護方針について<br>
+                            株式会社藤田内装建築では、個人情報の重要性を認識し、以下の取り組みを実施いたしております。<br>
+                            1. 個人情報に関しては適用される法令、規範を遵守します。<br>
+                            2. 利用目的の範囲内で取り扱います。<br>
+                            3. 個人情報を取り扱うにあたり、損失、漏洩等がない様、適切に管理します。</p>
+                      </div>
+                    </div>
+                    
+                </div>
+                <footer class="info__footer">
+                    <div class="footer__links">
+                        <div class="footer__title">
+                            <img src="http://www.fnk.jp/wpf/wp-content/themes/fujitanew/images/footer-logo.svg" alt="#">
+                            <p>〒住所が入ります</p>
+                        </div>
+                        <div class="footer__home">
+                            <a href="#">リンクへ飛びます</a><br>
+                            <a href="#">リンクへ飛びます</a>  
+                        </div>
+                        <div class="footer__info">
+                            <a href="#">リンクへ飛びます</a><br>
+                            <a href="#">リンクへ飛びます</a>
+                        </div>
+                        <div class="footer__content">
+                            <a href="#">リンクへ飛びます</a><br>
+                            <a href="#">リンクへ飛びます</a>
+                        </div>
+                        <div class="footer__perform">
+                            <a href="#">リンクへ飛びます</a><br>
+                            <a href="#">リンクへ飛びます</a>
+                        </div>
+                    </div>
+                </footer>
+
+                <div class="footer-nav">
+                    <p>Copyright © Fujita naisoukenchiku Co.,Ltd. All Rights Reserved.</p>
+                    <li class="footer-recruit"><a href="#">採用情報</a></li>
+                    <li class="footer-contact"><a href="#">お問い合わせ</a></li>
+                </div>
+            </div>
+        </div>
+
+    
+          <!-- sp toggleMenu -->
+          <nav class="nav-sp fixed-top">
+    
+            <div class="nav-sp__wrap" id="nav-sp__wrap">
+                <div class="circle icon1">
+                    <span class="bar top"></span>
+                    <span class="bar middle"></span>
+                    <span class="bar bottom"></span>
+                </div>
+            </div>
+
+            <ul class="nav-sp__accordion nav9" id="nav-sp__accordion">
+                <li class="nav-sp__accordion__menu" id="nav-sp__accordion__menu__top"><a>TOP</a></li>
+
+                <div class="nav-sp__wrap2">
+                    <div class="circle2 icon2" id="sp-info-icon">
+                        <span id="top2" class="tate1"></span>
+                        <span id="middle2" class="yoko1"></span>
+                    </div>
+                </div>
+                <li class="nav-sp__accordion__menu nav-sp__accordion__menu__info" id="sp-info">会社案内
+                    <div class="nav-sp__submenu__item">
+                        <li class="nav-sp__submenu__item1 nav10" id="nav-sp__submenu__item1"><a href="#" style="letter-spacing: 1rem;">沿革</a></li>
+                        <li class="nav-sp__submenu__item2 nav11" id="nav-sp__submenu__item2"><a href="#" style="letter-spacing: 1rem;">資格</a></li>
+                        <li class="nav-sp__submenu__item3 nav12" id="nav-sp__submenu__item3"><a href="#">営業場・工場・アクセス</a></li>
+                    </div>
+                </li>
+
+                <div class="nav-sp__wrap3" id="sp-content-icon">
+                    <div class="circle3 icon3">
+                        <span id="top3" class="tate2"></span>
+                        <span id="middle3" class="yoko2"></span>
+                    </div>
+                </div>
+                <li class="nav-sp__accordion__menu nav-sp__accordion__menu__content" id="sp-content">業務内容
+                    <div class="nav-sp__submenu sp-content-icon">
+                        <li class="nav-sp__submenu__item4 nav13" id="nav-sp__submenu__item__content1"><a href="#">内装工事</a></li>
+                        <li class="nav-sp__submenu__item5 nav14" id="nav-sp__submenu__item__content2"><a href="#">その他業務</a></li>
+                    </div>
+                </li>
+                
+                <li class="nav-sp__accordion__menu" id="sp-construction"><a>施工事例</a></li>
+                        <li class="nav-sp__accordion__menu2" id="sp-recruit" style="background-color: #3071b9;"><a>採用情報</a></li>
+                        <li class="nav-sp__accordion__menu3" id="sp-contact" style="background-color: #003e8e;"><a>お問い合わせ</a></li>
+            </ul>
+        </nav>
+
+            <!-- sp info-body -->
+        <div class="container-fluid">
+            <div class="sp-info">
+                <div class="sp-title">
+                    <div class="sp-info__wrap__title d-block font-weight-bold">
+                        <h2 class="sp-info__title">CONTACT</h2>
+                        <p class="sp-info__subtitle">お問い合わせ</p>
+                    </div>
+                </div>
+                <form action="http://localhost:3000/api/v1/users" method="POST" id="sp-notMoveForm" target="sp-notMove" onsubmit="return check()">
+                    <table class="contact__table" style="margin-bottom: 50px;">
+                        <tbody>
+                            <!-- <tr><th>お名前<span class="must">※必須</span></th></tr> -->
+                            <tr><th>お名前<span class="must">※必須</span></th></tr>
+                            <tr><td>
+                                    
+                                        <input type="text" class="contact1" id="sp-name" name="name" required>
+                                    
+                            </td></tr>
+                            <tr><th>ふりがな<span class="must">※必須</span></th></tr>
+                            <tr><td>
+                                    
+                                        <input type="text" class="contact1" id="sp-kana" name="kana" required>
+                                    
+                            </td></tr>
+                            <tr><th>メールアドレス<span class="must">※必須</span></th></tr>
+                            <tr><td>
+                                    
+                                        <input type="text" class="contact1" id="sp-address" name="address" required>
+                                    
+                            </td></tr>
+                            <tr><th>会社名</th></tr>
+                            <tr><td>
+                                    
+                                        <input type="text" class="contact1" id="sp-company" name="company">
+                                    
+                            </td></tr>
+                            <tr><th>部署名</th></tr>
+                            <tr><td>
+                                    
+                                        <input type="text" class="contact1" id="sp-department" name="department">
+                                    
+                            </td></tr>
+                            <tr><th>電話番号<span class="must">※必須</span></th></tr>
+                            <tr><td>
+                                    
+                                        <input type="text" class="contact1" id="sp-phoneNumber" name="phoneNumber" required>
+                                    
+                            </td></tr>
+                            
+                            <tr><th>ご住所</th></tr>
+                            <tr><td>
+                                    
+                                        <input type="text" class="contact1" id="sp-post" name="post">
+                                    
+                            </td></tr>
+                            <tr><th>マンション・ビル名</th></tr>
+                            <tr><td>
+                                    
+                                        <input type="text" class="contact1" id="sp-post2" name="post2">
+                                    
+                            </td></tr>
+                            <tr><th>お問い合わせ内容<span class="must">※必須</span></th></tr>
+                            <tr><td>
+                                    
+                                        <textarea type="text" class="contact1" id="sp-contents" name="contents"  rows="10" cols="2" required></textarea>
+                                    
+                            </td></tr>
+    
+                        </tbody>
+                    </table>
+                    <div class="confirm">
+                        <div class="confirm2">
+                            <input type="checkbox" name="my-input" id="checkbox" required>
+                            <label for="yes">上記内容にて送信しますので、よろしければチェックを入れてください。<span class="must">※必須</span></label>
+                        </div>
+                    <button class="confirm-btn">送信</button>
+                </form>
+                <iframe name="sp-notMove" style="width: 0; height: 0; border: 0;"></iframe>
+
+
+                    <div class="jumbotron rec-jumbotron p-0" style="margin: 100px auto 100px auto;">
+                        <div class="rec-wrap">
+                            <p class="contact-title">個人情報保護方針</p>
+                            <div class="rec-wrap2">
+                                <div class="rec-wrap3" style="display: block;">
+                                    <p class="rec-name">株式会社 藤田内装建築 ［ 本社／総務部 ］</p>
+                                    <p class="rec-post">〒949-8724 新潟県小千谷岩沢2352-3</p>
+                                </div>
+                           </div>
+                        </div>
+                      <div class="rec-wrap7">
+                          <p>個人情報保護方針について<br>
+                            株式会社藤田内装建築では、個人情報の重要性を認識し、以下の取り組みを実施いたしております。<br>
+                            1. 個人情報に関しては適用される法令、規範を遵守します。<br>
+                            2. 利用目的の範囲内で取り扱います。<br>
+                            3. 個人情報を取り扱うにあたり、損失、漏洩等がない様、適切に管理します。</p>
+                      </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <nav class="sp-footer-bottom">
+                <ul class="sp-footer-nav d-flex">
+                    <li class="sp-footer-nav__left">採用情報</li>
+                    <li class="sp-footer-nav__right">お問い合わせ</li>
+                </ul>
+                <div class="sp-footer__copyright">
+                    <a href="#">Copyright © Fujita naisoukenchiku Co.,Ltd. All Rights Reserved.</a>
+                </div>
+            </nav>
+
+            <script src="js/index.js" defer></script>
+            <script src="js/main.js" defer></script>
+            <script src="../app/public/js/users.js" defer></script>
+    </body>
+</html>

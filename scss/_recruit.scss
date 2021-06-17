@@ -1,0 +1,89 @@
+.rec-wrap {
+    text-align: center;
+    .rec-title {
+        height: 50px;
+        line-height: 50px;
+        color: #ffffff;
+        font-weight: bold;
+        background-color: #8d8a8a;
+    }
+    .rec-wrap2 {
+        .rec-wrap3 {
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            padding-top: 30px;
+            .rec-name {
+                font-size: 1.25rem;
+            }
+        }
+        .rec-info {
+            margin: 20px auto;
+            width: 430px;
+            height: 32px;
+            line-height: 32px;
+            font-weight: bold;
+            background-color: #bdb8b8;
+            border-radius: 15px;
+            color: #ffffff;
+        }
+        .rec-wrap4 {
+            color: #003e8e;
+            display: flex;
+            justify-content: center;
+            .rec-wrap5 {
+                display: flex;
+                i {
+                    margin: 3px 0 0 10px;
+                }
+                p {
+                    margin-left: 10px;
+                    font-size: 1.75rem;
+                    font-weight: bold;
+                }
+            }
+            .rec-wrap6 {
+                display: flex;
+                justify-content: center;
+                margin-left: 50px;
+                i {
+                    margin: 3px 0 0 10px;
+                }
+                p {
+                    margin-left: 10px;
+                    font-size: 1.75rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .rec-info2 {
+        display: block;
+        width: 400px;
+        height: 50px;
+        line-height: 50px;
+        color: #ffffff;
+        font-weight: bold;
+        background-color: #2a6dc5;
+        text-decoration: none;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+}
+
+.rec-wrap7 {
+    padding: 0 0 40px 30px;
+}
+
+.sp-rec-info2 {
+    display: block;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #2a6dc5;
+    text-decoration: none;
+    margin: 0 auto;
+    border-radius: 5px;
+}

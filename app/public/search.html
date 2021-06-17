@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>HP管理ページ</title>
+</head>
+<body style="background-color:rgb(200, 221, 244);">
+    <div class="container-fluid" style="position: relative;">
+        <div class="search-menu mt-4">
+            <div class="search-back">
+                <a href="/app/public/management.html" style="display: block;">
+                    <svg class="search-icon1" style="color: #fff;" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="search-dust d-flex">
+                <svg class="search-icon2 delete-btn" id="delete-btn" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                    <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                </svg>
+            </div>
+        </div>
+
+    <div class="container search-pc">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">名前</th>
+                    <th scope="col">かな</th>
+                    <th scope="col">メールアドレス</th>
+                    <th scope="col">会社名</th>
+                    <th scope="col">部署名</th>
+                    <th scope="col">電話番号</th>
+                    <th scope="col">住所</th>
+                    <th scope="col">建物/ビル名</th>
+                    <th scope="col">受信日</th>
+                </tr>
+            </thead>
+            <tbody id="search-list">
+    
+            </tbody>
+        </table>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">お問い合わせ内容</th>
+                </tr>
+            </thead>
+            <tbody id="contents-list">
+    
+            </tbody>
+        </table>
+    </div>
+</div>
+    <!-- under tab -->
+    <div class="container search-sp" style="overflow-y: scroll;">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">名前</th>
+                    <th scope="col">かな</th>
+                    <th scope="col">メールアドレス</th>
+                </tr>
+            </thead>
+            <tbody id="sp-body">
+    
+            </tbody>
+        </table>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">会社名</th>
+                    <th scope="col">部署名</th>
+                    <th scope="col">電話番号</th>
+                </tr>
+            </thead>
+            <tbody id="sp-body-2nd">
+    
+            </tbody>
+        </table>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">住所</th>
+                    <th scope="col">建物/ビル名</th>
+                    <th scope="col">受信日</th>
+                </tr>
+            </thead>
+            <tbody id="sp-body-3rd">
+    
+            </tbody>
+        </table>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">お問い合わせ内容</th>
+                </tr>
+            </thead>
+            <tbody id="sp-contents">
+    
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/users.js" defer></script>
+    <script src="js/index.js" defer></script>
+</body>
+</html>

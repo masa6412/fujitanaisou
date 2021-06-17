@@ -1,0 +1,141 @@
+.content-wrapper {
+    padding-bottom: 60px;
+}
+
+.content-right {
+    h3 {
+        font-size: 1.75rem;
+    }
+    p {
+        padding-top: 35px;
+        line-height: 170%;
+    }
+    .content-more {
+        position: relative;
+        text-align: right;
+        a {
+            margin-right: 10px;
+        }
+        img {
+            position: absolute;
+            top: 30%;
+        }
+    }
+}
+
+.content-wrap {
+    padding-top: 20px;   
+
+    .content-detail {
+        display: flex;
+        
+        p {
+            padding: 0;
+        }
+    } 
+}
+
+
+
+.content-wrap2 {
+    position: relative;
+    display: flex;
+    border-top: 1px solid #d1cdcd;
+    &:before {
+        content: '';
+        position: absolute;
+        border:  1px solid #d1cdcd;
+        left: 50%;
+        height: 500px;
+    }
+    .wrap2-left {
+        display: block;
+        padding: 70px 40px 0 0;
+        h3 {
+            font-size: 1.75rem;
+        }
+        p {
+            padding-top: 10px;
+        }
+        .content-links {
+            position: relative;
+            text-align: right;
+            a {
+                margin-right: 10px;
+                text-decoration: none;
+            }
+            img {
+                position: absolute;
+                top: 30%;
+            }
+        }
+        .img-fluid {
+            max-height: 250px;
+        }
+    }
+    .wrap2-right {
+        display: block;
+        padding: 70px 40px 0 40px;
+        h3 {
+            font-size: 1.75rem;
+        }
+        p {
+            padding-top: 10px;
+        }
+        .content-links {
+            position: relative;
+            text-align: right;
+            a {
+                margin-right: 20px;
+                text-decoration: none;
+            }
+            img {
+                position: absolute;
+                top: 30%;
+                right: 0;
+            }
+        }
+        .img-fluid {
+            max-height: 250px;
+        }
+    } 
+}
+
+.sp-title {
+    margin-top: 60px;
+}
+
+.sp-content {
+    .content-left img {
+        object-fit: cover;
+        width: 100%;
+        max-height: 400px;
+    }
+    .content-right {
+        h3 {
+            padding-top: 20px;
+        }
+        .content-more {
+            margin-top: 15px;
+        }
+        .content-detail p {
+            padding-top: 5px;
+            
+        }
+    }
+}
+
+.sp-devider {
+    margin: 50px 0 ;
+    border: 1px solid #d1cdcd;
+}
+
+.sp-2nd-content {
+    width: 100%;
+    .sp-esta-img img {
+        margin-top: 20px;
+        object-fit: cover;
+        width: 100%;
+        max-height: 400px;
+    }
+}

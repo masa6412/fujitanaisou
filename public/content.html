@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://kit.fontawesome.com/434bcc9383.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js" defer></script>
+    
+    <title>会社案内</title>
+</head>
+<body>
+
+        <header>
+            <div class="container-fluid header-wrapper">
+                <div class="row">
+                    <img src="../img/top-bg.jpg" style="width: 100%;" alt="#">
+                </div>
+                <div class="header-logo">
+                    <img src="../img/mainLogo.png" alt="#">
+                </div>
+            </div>
+    
+            <div class="header-items d-flex">
+                <!-- tabサイズ以上 -->
+                <div class="top-nav" style="background-color: rgb(163, 159, 159);">
+                    <nav>
+                        <ul class="nav-menu">
+                          <li id="top"><a href="#">TOP</a></li>
+                          <li id="info-icon">
+                              <a href="#">会社案内</a>
+                              <!-- #info-toggleにカーソルが乗っている時も表示させたいができない -->
+                              <!-- <ul id="info-toggle">
+                                  <li>沿革</li>
+                                  <li>資格</li>
+                                  <li>営業場・工場・アクセス</li>
+                              </ul> -->
+                          </li>
+                          
+                          <li id="content"><a href="#">業務内容</a></li>
+                          <li id="construction"><a href="#">施工事例</a></li>
+                          <li id="recruit" class="nav-menu__recruit"><a href="#">採用情報</a></li>
+                          <li id="contact" class="nav-menu__info"><a href="#">お問い合わせ</a></li>
+                        </ul>
+                      </nav>
+                </div>
+            </div>
+
+        </header>
+        <p id="topbutton" onclick="$('html,body').animate({ scrollTop: 0 }); return false;">
+            <i class="fas fa-chevron-up"></i>
+        </p>
+      
+            <div class="container-fluid content-pc">
+                
+                <div class="paper-heading"><img style="padding-top: 100px;" src="http://www.fnk.jp/wpf/wp-content/themes/fujitanew/images/company-arrow.svg" alt="#"></div>                
+                <div class="info" style="box-shadow: 0px 2px 3px rgb(80, 79, 79)">
+                    <div class="info__wrap">
+                        <div class="info__wrap__title d-block font-weight-bold">
+                            <h2 class="info__title">JOB DESCRIPTION</h2>
+                            <p class="info__subtitle">業務内容</p>
+                        </div>
+                    </div>
+                    <div class="info_article">
+                        <div class="container content-wrapper">
+                            <div class="row">
+                                <div class="content-left col-md-6">
+                                    <img class="img-fluid" style="height: 275px; width: 470px;" src="../img/content1.jpeg" alt="#">
+                                </div>
+                                <div class="content-right col-md-6">
+                                    <h3>内装工事</h3>
+                                    <p>県内最大級の建築内装業者として、高い工事能力から業界内で高い信頼を得ております。</p>
+                                    <div class="content-more">
+                                        <a href="#">もっと詳しく見る</a>
+                                        <img src="http://www.fnk.jp/wpf/wp-content/themes/fujitanew/images/arrow-blue.svg" alt="#">
+                                    </div>
+                                    <div class="content-wrap">
+                                        <div class="content-detail row pl-3">
+                                            <p class="col-6">●軽量鉄骨下地工事</p>
+                                            <p class="col-6">●フリーアクセスフロア工事</p>
+                                        </div>
+                                        <div class="content-detail row pl-3">
+                                            <p class="col-6">●内外装ボード工事</p>
+                                            <p class="col-6">●フローリング工事</p>
+                                        </div>
+                                        <div class="content-detail row pl-3">
+                                            <p class="col-6">●壁装工事</p>
+                                            <p class="col-6">●カーテン工事</p>
+                                        </div>
+                                        <div class="content-detail row pl-3">
+                                            <p class="col-6">●床仕上げ</p>
+                                            <p class="col-6">●ブラインド工事</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 不動産部門 -->
+                        <div class="container">
+                            <div class="content-wrap2 row">
+                                <div class="wrap2-left col-md-6 col-sm-12">
+                                    <h3>不動産部門</h3>
+                                    <p>藤田内装建築では不動産管理を行っております。</p>
+                                    <div class="content-links">
+                                        <a href="#">もっと詳しく見る</a>
+                                        <img src="http://www.fnk.jp/wpf/wp-content/themes/fujitanew/images/arrow-blue.svg" alt="#">
+                                    </div>
+                                    
+                                        <img class="img-fluid" src="../img/content2.jpeg" alt="">
+                                    
+                                </div>
+                                <div class="wrap2-right col-md-6 col-sm-12">
+                                    <h3>保険部門</h3>
+                                    <p>藤田内装建築では保険代行を行っております。</p>
+                                    <div class="content-links">
+                                        <a href="#">もっと詳しく見る</a>
+                                        <img src="http://www.fnk.jp/wpf/wp-content/themes/fujitanew/images/arrow-blue.svg" alt="#">
+                                    </div>
+                                    <img class="img-fluid" src="../img/content3.jpeg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                <footer class="info__footer">
+                    <div class="footer__links">
+                        <div class="footer__title">
+                            <img src="http://www.fnk.jp/wpf/wp-content/themes/fujitanew/images/footer-logo.svg" alt="#">
+                            <p>〒住所が入ります</p>
+                        </div>
+                        <div class="footer__home">
+                            <a href="#">リンクへ飛びます</a><br>
+                            <a href="#">リンクへ飛びます</a>  
+                        </div>
+                        <div class="footer__info">
+                            <a href="#">リンクへ飛びます</a><br>
+                            <a href="#">リンクへ飛びます</a>
+                        </div>
+                        <div class="footer__content">
+                            <a href="#">リンクへ飛びます</a><br>
+                            <a href="#">リンクへ飛びます</a>
+                        </div>
+                        <div class="footer__perform">
+                            <a href="#">リンクへ飛びます</a><br>
+                            <a href="#">リンクへ飛びます</a>
+                        </div>
+                    </div>
+                </footer>
+
+                <div class="footer-nav">
+                    <p>Copyright © Fujita naisoukenchiku Co.,Ltd. All Rights Reserved.</p>
+                    <li class="footer-recruit"><a href="#">採用情報</a></li>
+                    <li class="footer-contact"><a href="#">お問い合わせ</a></li>
+                </div>
+            
+                </div>
+            </div>
+    
+        
+              <!-- sp toggleMenu -->
+            <nav class="nav-sp fixed-top">
+    
+                    <div class="nav-sp__wrap" id="nav-sp__wrap">
+                        <div class="circle icon1">
+                            <span class="bar top"></span>
+                            <span class="bar middle"></span>
+                            <span class="bar bottom"></span>
+                        </div>
+                    </div>
+        
+                    <ul class="nav-sp__accordion nav9" id="nav-sp__accordion">
+                        <li class="nav-sp__accordion__menu" id="nav-sp__accordion__menu__top"><a>TOP</a></li>
+        
+                        <div class="nav-sp__wrap2">
+                            <div class="circle2 icon2" id="sp-info-icon">
+                                <span id="top2" class="tate1"></span>
+                                <span id="middle2" class="yoko1"></span>
+                            </div>
+                        </div>
+                        <li class="nav-sp__accordion__menu nav-sp__accordion__menu__info" id="sp-info">会社案内
+                            <div class="nav-sp__submenu__item">
+                                <li class="nav-sp__submenu__item1 nav10" id="nav-sp__submenu__item1"><a href="#" style="letter-spacing: 1rem;">沿革</a></li>
+                                <li class="nav-sp__submenu__item2 nav11" id="nav-sp__submenu__item2"><a href="#" style="letter-spacing: 1rem;">資格</a></li>
+                                <li class="nav-sp__submenu__item3 nav12" id="nav-sp__submenu__item3"><a href="#">営業場・工場・アクセス</a></li>
+                            </div>
+                        </li>
+        
+                        <div class="nav-sp__wrap3" id="sp-content-icon">
+                            <div class="circle3 icon3">
+                                <span id="top3" class="tate2"></span>
+                                <span id="middle3" class="yoko2"></span>
+                            </div>
+                        </div>
+                        <li class="nav-sp__accordion__menu nav-sp__accordion__menu__content" id="sp-content">業務内容
+                            <div class="nav-sp__submenu sp-content-icon">
+                                <li class="nav-sp__submenu__item4 nav13" id="nav-sp__submenu__item__content1"><a href="#">内装工事</a></li>
+                                <li class="nav-sp__submenu__item5 nav14" id="nav-sp__submenu__item__content2"><a href="#">その他業務</a></li>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-sp__accordion__menu" id="sp-construction"><a>施工事例</a></li>
+                        <li class="nav-sp__accordion__menu2" id="sp-recruit" style="background-color: #3071b9;"><a>採用情報</a></li>
+                        <li class="nav-sp__accordion__menu3" id="sp-contact" style="background-color: #003e8e;"><a>お問い合わせ</a></li>
+                    </ul>
+            </nav>
+
+
+            <!-- sp content-wrap -->
+            <div class="container-fluid sp-contents">
+                <div class="sp-content">
+                    <div class="sp-title">
+                        <div class="sp-info__wrap__title d-block font-weight-bold">
+                            <h2 class="sp-info__title">JOB DESCRIPTION</h2>
+                            <p class="sp-info__subtitle">事業内容</p>
+                        </div>
+                    </div>
+
+
+                    <div class="content-left">
+                        <img class="img-fluid" src="../img/content1.jpeg" alt="#">
+                    </div>
+                     <div class="content-right">
+                        <h3>内装工事</h3>
+                        <p>県内最大級の建築内装業者として、高い工事能力から業界内で高い信頼を得ております。</p>
+                        <div class="content-more">
+                            <a href="#">もっと詳しく見る</a>
+                            <img src="http://www.fnk.jp/wpf/wp-content/themes/fujitanew/images/arrow-blue.svg" alt="#">
+                        </div>
+                        <div class="content-detail">
+                            <p>●軽量鉄骨下地工事</p>
+                            <p>●フリーアクセスフロア工事</p>
+                            <p>●内外装ボード工事</p>
+                            <p>●フローリング工事</p>
+                            <p>●壁装工事</p>
+                            <p>●カーテン工事</p>
+                            <p>●床仕上げ</p>
+                            <p>●ブラインド工事</p>
+                        </div>
+
+                <div class="sp-devider"></div>
+                    <!-- 不動産紹介 -->
+                    <div class="sp-2nd-content">
+                        <h3>不動産部門</h3>
+                        <p>藤田内装建築では不動産管理を行っております。</p>
+                        <div class="content-more">
+                            <a href="#">もっと詳しく見る</a>
+                            <img src="http://www.fnk.jp/wpf/wp-content/themes/fujitanew/images/arrow-blue.svg" alt="#">
+                        </div>
+                        <div class="sp-esta-img">
+                            <img src="../img/content2.jpeg" alt="#">
+                        </div>
+                    </div>
+
+                    <div class="sp-devider"></div>
+                    
+                    <div class="sp-span"></div>
+                    <div class="sp-2nd-content">
+                        <h3>保険部門</h3>
+                        <p>藤田内装建築では保険代行を行っております。</p>
+                        <div class="content-more">
+                            <a href="#">もっと詳しく見る</a>
+                            <img src="http://www.fnk.jp/wpf/wp-content/themes/fujitanew/images/arrow-blue.svg" alt="#">
+                        </div>
+                        <div class="sp-esta-img">
+                            <img src="../img/content3.jpeg" alt="#">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+                <footer class="sp-footer-style container-fluid">
+                    <div class="sp-info__footer">
+                        <div class="footer-logo">
+                            <img src="../img/sp-footer-logo.svg" alt="#">
+                            <p class="sp-footer__post pt-2">〒949-8724 新潟県小千谷市岩沢2352-3<br>
+                                tel.0258-86-2576　fax.0258-86-2289</p>
+                            <div class="sp-footer-link pt-3">
+                                <a href="#">ホーム</a>
+                                <a href="#">お知らせ</a>
+                                <a class="pt-2" href="#">会社案内</a>
+    
+                                <div class="sp-footer-link__wrap">
+                                    <img src="../img/logo.svg" alt="">
+                                    <a class="sp-space" href="#">沿革</a>
+                                </div>
+                                <div class="sp-footer-link__wrap">
+                                    <img src="../img/logo.svg" alt="">
+                                    <a class="sp-space" href="#">資格</a>
+                                </div>
+                                <div class="sp-footer-link__wrap">
+                                    <img src="../img/logo.svg" alt="">
+                                    <a href="#">営業場・工場・アクセス</a>
+                                </div>
+    
+                                <a class="pt-2" href="#">業務内容</a>
+                                <div class="sp-footer-link__wrap">
+                                    <img src="../img/logo.svg" alt="">
+                                    <a href="#">内装工事</a>
+                                </div>
+                                <div class="sp-footer-link__wrap">
+                                    <img src="../img/logo.svg" alt="">
+                                    <a href="#">その他業務</a>
+                                </div>
+                                <a class="pt-2" href="#">施工実績</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                    
+                <nav class="sp-footer-bottom">
+                    <ul class="sp-footer-nav d-flex">
+                        <li class="sp-footer-nav__left">採用情報</li>
+                        <li class="sp-footer-nav__right">お問い合わせ</li>
+                    </ul>
+                    <div class="sp-footer__copyright">
+                        <a href="#">Copyright © Fujita naisoukenchiku Co.,Ltd. All Rights Reserved.</a>
+                    </div>
+                </nav>
+    
+
+          <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+          <script src="js/index.js"></script>
+          <script src="js/main.js"></script>
+    </body>
+</html>

@@ -13,34 +13,46 @@
     <header>
         <div class="container-fluid header-wrapper">
             <div class="row">
-                <img src="../img/background.jpeg" style="width: 100%;" alt="#">
+                <img src="../img/top-bg.jpg" style="width: 100%;" alt="#">
             </div>
             <div class="header-logo">
-                <img src="../img/logo.svg" alt="#">
+                <img src="../img/mainLogo.png" alt="#">
             </div>
         </div>
 
         <div class="header-items d-flex">
             <!-- tabサイズ以上 -->
             <div class="top-nav" style="background-color: rgb(163, 159, 159);">
-              <nav>
-                <ul class="nav-menu">
-                  <li><a href="#">TOP</a></li>
-                  <li><a href="#">会社案内</a></li>
-                  <li><a href="#">業務内容</a></li>
-                  <li><a href="#">施工事例</a></li>
-                  <li class="nav-menu__recruit"><a href="#">採用情報</a></li>
-                  <li class="nav-menu__info"><a href="#">お問い合わせ</a></li>
-                </ul>
-              </nav>
+                <nav>
+                    <ul class="nav-menu">
+                      <li id="top"><a href="#">TOP</a></li>
+                      <li id="info-icon">
+                          <a href="#">会社案内</a>
+                          <!-- #info-toggleにカーソルが乗っている時も表示させたいができない -->
+                          <!-- <ul id="info-toggle">
+                              <li>沿革</li>
+                              <li>資格</li>
+                              <li>営業場・工場・アクセス</li>
+                          </ul> -->
+                      </li>
+                      
+                      <li id="content"><a href="#">業務内容</a></li>
+                      <li id="construction"><a href="#">施工事例</a></li>
+                      <li id="recruit" class="nav-menu__recruit"><a href="#">採用情報</a></li>
+                      <li id="contact" class="nav-menu__info"><a href="#">お問い合わせ</a></li>
+                    </ul>
+                  </nav>
             </div>
-
         </div>
     </header>
 
-        <div class="container-fluid info-pc" style="background-color: #e6e6e6; height: 3550px;">
+    <p id="topbutton" onclick="$('html,body').animate({ scrollTop: 0 }); return false;">
+        <i class="fas fa-chevron-up"></i>
+    </p>
+
+        <div class="container-fluid info-pc" style="background-color: #e6e6e6; height: 3500px;">
+            <div class="paper-heading"><img style="padding-top: 400px;" src="http://www.fnk.jp/wpf/wp-content/themes/fujitanew/images/company-arrow.svg" alt="#"></div>
             <div class="info" style="box-shadow: 0px 2px 3px rgb(80, 79, 79)">
-            <div class="paper-heading"></div>
                 <div class="info__wrap2">
                     <img class="info__pic" src="../img/info_pic.jpg" alt="#">
                 </div>
@@ -332,82 +344,91 @@
                             </tbody>
                         </table>
                     </div>
+
+                </div>
+                <footer class="info__footer">
+                    <div class="footer__links">
+                        <div class="footer__title">
+                            <img src="http://www.fnk.jp/wpf/wp-content/themes/fujitanew/images/footer-logo.svg" alt="#">
+                            <p>〒住所が入ります</p>
+                        </div>
+                        <div class="footer__home">
+                            <a href="#">リンクへ飛びます</a><br>
+                            <a href="#">リンクへ飛びます</a>  
+                        </div>
+                        <div class="footer__info">
+                            <a href="#">リンクへ飛びます</a><br>
+                            <a href="#">リンクへ飛びます</a>
+                        </div>
+                        <div class="footer__content">
+                            <a href="#">リンクへ飛びます</a><br>
+                            <a href="#">リンクへ飛びます</a>
+                        </div>
+                        <div class="footer__perform">
+                            <a href="#">リンクへ飛びます</a><br>
+                            <a href="#">リンクへ飛びます</a>
+                        </div>
+                    </div>
+                </footer>
+
+                <div class="footer-nav">
+                    <p>Copyright © Fujita naisoukenchiku Co.,Ltd. All Rights Reserved.</p>
+                    <li class="footer-recruit"><a href="#">採用情報</a></li>
+                    <li class="footer-contact"><a href="#">お問い合わせ</a></li>
                 </div>
             </div>
         </div>
 
-        <footer class="info__footer" style="background-color:#eeefef;">
-            <div class="footer__links">
-                <div class="footer__title">
-                    <img src="http://www.fnk.jp/wpf/wp-content/themes/fujitanew/images/footer-logo.svg" alt="#">
-                    <p>〒住所が入ります</p>
-                </div>
-                <div class="footer__home">
-                    <a href="#">リンクへ飛びます</a><br>
-                    <a href="#">リンクへ飛びます</a>  
-                </div>
-                <div class="footer__info">
-                    <a href="#">リンクへ飛びます</a><br>
-                    <a href="#">リンクへ飛びます</a>
-                </div>
-                <div class="footer__content">
-                    <a href="#">リンクへ飛びます</a><br>
-                    <a href="#">リンクへ飛びます</a>
-                </div>
-                <div class="footer__perform">
-                    <a href="#">リンクへ飛びます</a><br>
-                    <a href="#">リンクへ飛びます</a>
+        
+
+        
+
+          <!-- sp toggleMenu -->
+          <nav class="nav-sp fixed-top">
+    
+            <div class="nav-sp__wrap" id="nav-sp__wrap">
+                <div class="circle icon1">
+                    <span class="bar top"></span>
+                    <span class="bar middle"></span>
+                    <span class="bar bottom"></span>
                 </div>
             </div>
 
-        </footer>
+            <ul class="nav-sp__accordion nav9" id="nav-sp__accordion">
+                <li class="nav-sp__accordion__menu" id="nav-sp__accordion__menu__top"><a>TOP</a></li>
 
-          <!-- sp toggleMenu -->
-        <nav class="nav-sp fixed-top">
-
-                <div class="nav-sp__wrap" id="nav-sp__wrap">
-                    <div class="circle icon1">
-                        <span class="bar top"></span>
-                        <span class="bar middle"></span>
-                        <span class="bar bottom"></span>
+                <div class="nav-sp__wrap2">
+                    <div class="circle2 icon2" id="sp-info-icon">
+                        <span id="top2" class="tate1"></span>
+                        <span id="middle2" class="yoko1"></span>
                     </div>
                 </div>
-    
-                <ul class="nav-sp__accordion nav9" id="nav-sp__accordion">
-                    <li class="nav-sp__accordion__menu"><a>TOP</a></li>
-    
-                    <div class="nav-sp__wrap2">
-                        <div class="circle2 icon2" id="sp-info-icon">
-                            <span id="top2" class="tate1"></span>
-                            <span id="middle2" class="yoko1"></span>
-                        </div>
+                <li class="nav-sp__accordion__menu nav-sp__accordion__menu__info" id="sp-info">会社案内
+                    <div class="nav-sp__submenu__item">
+                        <li class="nav-sp__submenu__item1 nav10" id="nav-sp__submenu__item1"><a href="#" style="letter-spacing: 1rem;">沿革</a></li>
+                        <li class="nav-sp__submenu__item2 nav11" id="nav-sp__submenu__item2"><a href="#" style="letter-spacing: 1rem;">資格</a></li>
+                        <li class="nav-sp__submenu__item3 nav12" id="nav-sp__submenu__item3"><a href="#">営業場・工場・アクセス</a></li>
                     </div>
-                    <li class="nav-sp__accordion__menu nav-sp__accordion__menu__info">会社案内
-                        <div class="nav-sp__submenu__item">
-                            <li class="nav-sp__submenu__item1 nav10" id="nav-sp__submenu__item1"><a href="#" style="letter-spacing: 1rem;">沿革</a></li>
-                            <li class="nav-sp__submenu__item2 nav11" id="nav-sp__submenu__item2"><a href="#" style="letter-spacing: 1rem;">資格</a></li>
-                            <li class="nav-sp__submenu__item3 nav12" id="nav-sp__submenu__item3"><a href="#">営業場・工場・アクセス</a></li>
-                        </div>
-                    </li>
-    
-                    <div class="nav-sp__wrap3" id="sp-content-icon">
-                        <div class="circle3 icon3">
-                            <span id="top3" class="tate2"></span>
-                            <span id="middle3" class="yoko2"></span>
-                        </div>
+                </li>
+
+                <div class="nav-sp__wrap3" id="sp-content-icon">
+                    <div class="circle3 icon3">
+                        <span id="top3" class="tate2"></span>
+                        <span id="middle3" class="yoko2"></span>
                     </div>
-                    <li class="nav-sp__accordion__menu nav-sp__accordion__menu__content">業務内容
-                        <div class="nav-sp__submenu sp-content-icon">
-                            <li class="nav-sp__submenu__item4 nav13" id="nav-sp__submenu__item__content1"><a href="#">内装工事</a></li>
-                            <li class="nav-sp__submenu__item5 nav14" id="nav-sp__submenu__item__content2"><a href="#">その他業務</a></li>
-                        </div>
-                    </li>
-                    
-                    <li class="nav-sp__accordion__menu"><a>施工事例</a></li>
-                    <li class="nav-sp__accordion__menu2" style="background-color: #3071b9;"><a>採用情報</a></li>
-                    <li class="nav-sp__accordion__menu3" style="background-color: #003e8e;"><a>お問い合わせ</a></li>
-                </ul>
-        </nav>
+                </div>
+                <li class="nav-sp__accordion__menu nav-sp__accordion__menu__content" id="sp-content">業務内容
+                    <div class="nav-sp__submenu sp-content-icon">
+                        <li class="nav-sp__submenu__item4 nav13" id="nav-sp__submenu__item__content1"><a href="#">内装工事</a></li>
+                        <li class="nav-sp__submenu__item5 nav14" id="nav-sp__submenu__item__content2"><a href="#">その他業務</a></li>
+                    </div>
+                </li>
+                
+                <li class="nav-sp__accordion__menu" id="sp-construction"><a>施工事例</a></li>
+                <li class="nav-sp__accordion__menu2" id="sp-recruit" style="background-color: #3071b9;"><a>採用情報</a></li>
+                <li class="nav-sp__accordion__menu3" id="sp-contact" style="background-color: #003e8e;"><a>お問い合わせ</a></li>
+            </ul>
+    </nav>
 
             <!-- sp info-body -->
         <div class="container-fluid">
@@ -660,15 +681,15 @@
                 </footer>
             </div>
         </div>
-        <nav>
+        <nav class="sp-footer">
             <ul class="sp-footer-nav">
                 <li class="sp-footer-nav__left">採用情報</li>
                 <li class="sp-footer-nav__right">お問い合わせ</li>
             </ul>
+            <div class="sp-footer__copyright">
+                <a href="#">Copyright © Fujita naisoukenchiku Co.,Ltd. All Rights Reserved.</a>
+            </div>
         </nav>
-        <div class="sp-footer__copyright">
-            <a href="#">Copyright © Fujita naisoukenchiku Co.,Ltd. All Rights Reserved.</a>
-        </div>
 
           <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
           <script src="js/index.js"></script>
