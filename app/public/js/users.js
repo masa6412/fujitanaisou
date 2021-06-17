@@ -1,6 +1,6 @@
 // usersリソースのapiを実行する
 const usersModules = (() => {
-    const BASE_URL = "http://localhost:3000/api/v1/users"
+    const BASE_URL = "http://xs550209.xsrv.jp/api/v1/users"
     const headers = new Headers()
 
     headers.set('Content-Type', 'application/json')
